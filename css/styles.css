@@ -1,0 +1,160 @@
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	/* Make elements as high as viewport */
+
+	html {
+		height: 100%;
+	}
+
+	body {
+		position: relative;
+		height: 100%;
+	}
+
+	/* Video background */
+
+	.videobg {
+		position: absolute;
+		width: 100%; /* Set video container element width here */
+		height: 100%; /* Set video container element height here */
+		overflow: hidden;
+		background: #111; /* bg color, if video is not high enough */
+	}
+
+	/* horizontally center the video */
+	.videobg-width {
+		position: absolute;
+		width: 100%; /* Change width value to cover more area*/
+		height: 100%;
+		left: -9999px;
+		right: -9999px;
+		margin: auto;
+	}
+
+	/* set video aspect ratio and vertically center */
+	.videobg-aspect {
+		position: absolute;
+		width: 100%;
+		height: 0;
+		top: -9999px;
+		bottom: -9999px;
+		margin: auto;
+		padding-bottom: 56.25%; /* 16:9 ratio */
+		overflow: hidden;
+
+	}
+
+	.videobg-make-height {
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+	}
+
+	.videobg-hide-controls {
+		box-sizing: content-box;
+		position: relative;
+		height: 100%;
+		width: 100%;
+		/* Vimeo timeline and play button are ~55px high */
+		padding: 55px 97.7777px; /* 16:9 ratio */
+		top: -55px; 
+		left: -97.7777px; /* 16:9 ratio */
+	}
+
+	.videobg iframe {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		border: 0 none;
+	}
+
+	.card {
+		background: #ffafbd; /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #ffafbd, #ffc3a0); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #ffafbd, #ffc3a0);
+		opacity:0.9;
+	}
+
+	.hero-body {
+		top: 0;
+		left:0;
+		right:0;
+		bottom:0;
+	}
+
+	a {
+		color: white !important;
+	}
+
+	.input {
+		text-align: center;
+		width: 45%;
+	}
+
+	.twitter-button {
+		background-color: #1dcaff !important;
+	}
+
+	.fa-twitter {
+		color: white;
+	}
+
+
+	.hero { 
+		top: 0; 
+		right: 0;
+		background: rgba(0,0,0,0.3);
+		color: #fff; padding: 1rem;
+		font-family: Avenir, Helvetica, sans-serif;
+	}
+	@media all and (max-width: 600px) {
+		.hero { width: 50%; padding: .5rem; }
+	}
+	@media all and (max-width: 500px) {
+		.hero { display: none; }
+	}
+
+	.subtitle {
+		margin-bottom: 0.5em !important;
+	}
+
+	#modaltitle {
+		margin-top: 1em;
+		margin-bottom: 1.5em;
+	}
+
+	.box {
+		background-color: rgba(0, 246, 255, 0.5);
+		box-shadow: none;
+	}
+
+	.field-label {
+		margin-right: 0;
+	}
+	#title {
+		font-family: 'Caveat', cursive;
+		font-size: 62px;
+		color: white;
+		margin-top: 20px !important;
+		text-shadow:
+		1px -1px 0 #000,
+		-1px -1px 0 #000,
+		1px 1px 0 #000, 
+		-1px 1px 0 #000;
+	}
+
+	label {
+		font-family: 'Caveat', cursive;
+		color: #fff !important;
+		font-size: 26px !important;
+		text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;  
+	}
