@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dog Birthday Calculator</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<script type="text/javascript" src="../js/scripts.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#datepicker").datepicker();
+		});
+	</script>
+</head>
+<body>
+	<div class="videobg">
+		<div class="videobg-width">
+			<div class="videobg-aspect">
+				<div class="videobg-make-height">
+					<div class="videobg-hide-controls">
+						<iframe src="https://player.vimeo.com/video/114960135?title=0&byline=0&portrait=0&autoplay=1&loop=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="hero is-fullheight">
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<div class="column is-6 is-offset-3">
+					<div class="box">
+						<h4 class="title is-4 has-text-centered" id="title">Dog Birthday Calculator</h4>
+						<div class="field is-horizontal">
+							<div class="field-label is-normal has-text-centered">
+								<label class="label" for="name">Dog's Name</label>
+								<input type="name" class="form-control input is-medium" id="name" placeholder="Enter your Dog's Name">
+							</div>
+						</div>
+						<div class="field is-horizontal">
+							<div class="field-label is-normal has-text-centered has-icons-left">
+								<label class="label" for="dogBirthday">Dogs Birthday</label>
+								<input type="text" class="form-control input is-medium" onclick="$('#dogBirthday').datepicker();
+								$('#dogBirthday').datepicker('show');" id="dogBirthday" placeholder="Enter your Dog's Birthday" >
+							</div>
+						</div>
+						<br>
+
+						<div class="field has-addons has-addons-centered">
+							<p class="control">
+								<button onclick="dogsBdays()" class="button is-white is-outlined has-addons-centered is-medium" id="calculate" data-toggle="modal" data-target="#myModal">Calculate</button>
+							</p>
+						</div>
+
+						<div class="panel panel-default" id="bDayList">
+							<p class="title is-4" id="modaltitle"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
