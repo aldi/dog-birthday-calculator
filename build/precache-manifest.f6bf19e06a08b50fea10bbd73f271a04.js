@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a2b94558dbab0e28c5499b32d7c79f22",
+    "revision": "42bd5d4191e61764c65ba007ea090ef3",
     "url": "/dog-birthday-calculator/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dog-birthday-calculator/static/css/2.36606fc1.chunk.css"
   },
   {
-    "revision": "acafeb902aa9a509c844",
+    "revision": "4aec535387a5525396eb",
     "url": "/dog-birthday-calculator/static/css/main.8101ca79.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dog-birthday-calculator/static/js/2.67f44df1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "acafeb902aa9a509c844",
-    "url": "/dog-birthday-calculator/static/js/main.1f70dacb.chunk.js"
+    "revision": "4aec535387a5525396eb",
+    "url": "/dog-birthday-calculator/static/js/main.bb8ed695.chunk.js"
   },
   {
     "revision": "45da5e03eefdc07d8dbd",
