@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dog-birthday-calculator/precache-manifest.fe871597ece74a60b09913e38917e6ac.js"
+  "/dog-birthday-calculator/precache-manifest.f6bf19e06a08b50fea10bbd73f271a04.js"
 );
 
 self.addEventListener('message', (event) => {
