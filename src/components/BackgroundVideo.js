@@ -9,13 +9,13 @@ export default function BackgroundVideo() {
             <div className="videobg-hide-controls">
               <iframe
                 title="video"
-                src="https://player.vimeo.com/video/114960135?title=0&byline=0&portrait=0&autoplay=1&loop=1&autopause=0?muted=1"
+                src="https://player.vimeo.com/video/114960135?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&playsinline=1"
                 frameBorder="0"
-                allow="autoplay; fullscreen"
+                allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
                 webkitallowfullscreen="true"
                 mozallowfullscreen="true"
-              ></iframe>
+              />
             </div>
           </div>
         </div>
