@@ -1,22 +1,8 @@
-@import '../node_modules/bulma/css/bulma.min.css';
-
-/* Make elements as high as viewport */
-
-html {
-  height: 100%;
-}
-
-body {
-  position: relative;
-  height: 100%;
-}
-
 /* Video background */
-
 .videobg {
   position: absolute;
-  width: 100%; /* Set video container element width here */
-  height: 100%; /* Set video container element height here */
+  width: 140%;
+  height: 100%;
   overflow: hidden;
   background: #111; /* bg color, if video is not high enough */
 }
@@ -71,48 +57,17 @@ body {
   border: 0 none;
 }
 
-.card {
-  background: #ffafbd; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ffafbd, #ffc3a0); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffafbd, #ffc3a0);
-  opacity: 0.9;
-}
-
-.hero-body {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-a {
-  color: white !important;
-}
-
-.input {
-  text-align: center;
-}
-
-.hero {
-  top: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.3);
-  color: #fff;
-  padding: 1rem;
-  font-family: Avenir, Helvetica, sans-serif;
-}
-
-@media all and (max-width: 500px) {
+@media all and (max-width: 1214px) {
   .videobg-hide-controls {
     width: 300%;
   }
 
   .videobg-aspect {
-    padding-bottom: 200%;
-    width: 110%;
+    padding-bottom: 150%;
+    width: 100%;
   }
 
-  #title {
+  .title {
     font-size: 42px !important;
   }
 
@@ -125,39 +80,57 @@ a {
   }
 }
 
-.subtitle {
-  margin-bottom: 0.5em !important;
+@media all and (max-width: 500px) {
+  .videobg-hide-controls {
+    width: 300%;
+  }
+
+  .videobg-aspect {
+    padding-bottom: 200%;
+    width: 110%;
+  }
+
+  .title {
+    font-size: 42px;
+  }
+
+  .videobg-width {
+    width: 120%;
+  }
+
+  .videobg-hide-controls {
+    left: -350px;
+  }
 }
 
-#modaltitle {
-  margin-top: 1em;
-  margin-bottom: 1.5em;
-}
-
+/* .box {
+  background-color: rgba(0, 246, 255, 0.5);
+  box-shadow: none;
+  border-radius: 10px;
+} */
 .box {
   background-color: rgba(0, 246, 255, 0.5);
   box-shadow: none;
+  border-radius: 10px;
 }
 
-.field-label {
-  margin-right: 0;
-}
-
-#title {
+.title {
   font-family: 'Caveat', cursive;
   font-size: 62px;
   color: white;
-  margin-top: 20px !important;
   text-shadow: 1px -1px 0 #000, -1px -1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000;
 }
 
 .label {
   font-family: 'Caveat', cursive;
-  color: #fff !important;
-  font-size: 26px !important;
+  font-size: 28px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.is-m-auto {
+.mx-auto {
   margin: 0 auto;
+}
+
+.vp-spin {
+  display: none !important;
 }
