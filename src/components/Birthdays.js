@@ -2,14 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const containerVariants = {
-  hidden: { opacity: 0, y: -200 },
+  hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
       staggerChildren: 0.2,
       duration: 0.8,
-      ease: 'easeInOut',
+      ease: 'easeOut',
     },
   },
 };
@@ -19,18 +19,16 @@ const childrenVariants = {
     opacity: 0,
     scale: 0.8,
     x: 100,
-    y: '-2rem',
   },
   visible: {
     opacity: 1,
     scale: 1,
     x: 0,
-    y: 0,
     transition: {
       duration: 0.8,
       type: 'spring',
       stiffness: 120,
-      ease: 'easeInOut',
+      ease: 'easeOut',
       damping: 20,
     },
   },
@@ -42,12 +40,10 @@ const childrenVariants = {
 export default function Birthdays({ name, datesArr }) {
   return (
     <>
-      <p className="title is-4" id="modaltitle">
-        Upcoming birthdays for {name}:
-      </p>
+      <p className="title is-3 mt-4 mb-2">Upcoming birthdays for {name}:</p>
       <motion.div className="dates" variants={containerVariants} initial="hidden" animate="visible">
         {datesArr.map((date, index) => (
-          <motion.p key={index} className="subtitle is-4 dates" variants={childrenVariants}>
+          <motion.p key={index} className="subtitle is-4 mb-2" variants={childrenVariants}>
             {date}
           </motion.p>
         ))}

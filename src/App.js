@@ -7,6 +7,17 @@ import moment from 'moment';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
+const boxVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      ease: 'easeInOut',
+      duration: 0.5,
+    },
+  },
+};
+
 const variants = {
   hidden: { opacity: 0, y: -200 },
   visible: {
@@ -14,17 +25,6 @@ const variants = {
     y: 0,
     transition: {
       ease: 'easeOut',
-      duration: 0.5,
-    },
-  },
-};
-
-const variantsTemp = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      ease: 'easeInOut',
       duration: 0.5,
     },
   },
