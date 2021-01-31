@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/dog-birthday-calculator/static/css/main.9cd3af7d.chunk.css",
-    "main.js": "/dog-birthday-calculator/static/js/main.320681ce.chunk.js",
-    "main.js.map": "/dog-birthday-calculator/static/js/main.320681ce.chunk.js.map",
+    "main.js": "/dog-birthday-calculator/static/js/main.5721dc01.chunk.js",
+    "main.js.map": "/dog-birthday-calculator/static/js/main.5721dc01.chunk.js.map",
     "runtime-main.js": "/dog-birthday-calculator/static/js/runtime-main.48f29828.js",
     "runtime-main.js.map": "/dog-birthday-calculator/static/js/runtime-main.48f29828.js.map",
     "static/css/2.047de4f8.chunk.css": "/dog-birthday-calculator/static/css/2.047de4f8.chunk.css",
-    "static/js/2.e970b972.chunk.js": "/dog-birthday-calculator/static/js/2.e970b972.chunk.js",
-    "static/js/2.e970b972.chunk.js.map": "/dog-birthday-calculator/static/js/2.e970b972.chunk.js.map",
+    "static/js/2.d2f213ad.chunk.js": "/dog-birthday-calculator/static/js/2.d2f213ad.chunk.js",
+    "static/js/2.d2f213ad.chunk.js.map": "/dog-birthday-calculator/static/js/2.d2f213ad.chunk.js.map",
     "index.html": "/dog-birthday-calculator/index.html",
     "static/css/2.047de4f8.chunk.css.map": "/dog-birthday-calculator/static/css/2.047de4f8.chunk.css.map",
     "static/css/main.9cd3af7d.chunk.css.map": "/dog-birthday-calculator/static/css/main.9cd3af7d.chunk.css.map",
-    "static/js/2.e970b972.chunk.js.LICENSE.txt": "/dog-birthday-calculator/static/js/2.e970b972.chunk.js.LICENSE.txt"
+    "static/js/2.d2f213ad.chunk.js.LICENSE.txt": "/dog-birthday-calculator/static/js/2.d2f213ad.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.48f29828.js",
     "static/css/2.047de4f8.chunk.css",
-    "static/js/2.e970b972.chunk.js",
+    "static/js/2.d2f213ad.chunk.js",
     "static/css/main.9cd3af7d.chunk.css",
-    "static/js/main.320681ce.chunk.js"
+    "static/js/main.5721dc01.chunk.js"
   ]
 }
