@@ -1,42 +1,27 @@
 import dayjs from 'dayjs';
 
 export default function calculateBirthdays(dateOfBirth) {
-  const dates = [];
-  dateOfBirth = new Date(dateOfBirth);
-  const dayInSeconds = 1000 * 60 * 60 * 24;
-  const totalDays = Math.floor(dateOfBirth / dayInSeconds);
-  const today = new Date();
-  const todayInNum = Math.floor(today / dayInSeconds);
+  const birthDate = dayjs(dateOfBirth);
+  const today = dayjs();
+  const dayInMs = 86400000;
 
-  const daysDiff = todayInNum - totalDays;
+  const totalDaysBirth = Math.floor(birthDate.valueOf() / dayInMs);
+  const totalDaysToday = Math.floor(today.valueOf() / dayInMs);
+  const daysDiff = totalDaysToday - totalDaysBirth;
   let numBeforeBday = Math.floor(daysDiff / 52) + 1;
 
-  let isLeapYear = false;
-  if (today.getFullYear() % 4 === 0) {
-    isLeapYear = true;
-  } else {
-    isLeapYear = false;
-  }
+  const year = today.year();
+  const isLeapYear = (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+  const ratio = isLeapYear ? 366 / 7 : 365 / 7;
 
-  let dogRealBday = new Date();
-
-  let i = 0;
-
-  // Generate array with birthdays
-  while (i < 7) {
-    if (isLeapYear) {
-      dogRealBday = new Date(
-        dogRealBday.setTime(dateOfBirth.getTime() + numBeforeBday * (366 / 7) * 86400000)
-      );
-    } else {
-      dogRealBday = new Date(
-        dogRealBday.setTime(dateOfBirth.getTime() + numBeforeBday * (365 / 7) * 86400000)
-      );
-    }
-    let dateformated = dayjs(dogRealBday).format('dddd, D MMMM YYYY');
-    dates.push(dateformated);
+  const dates = [];
+  for (let i = 0; i < 7; i++) {
+    const birthday = dayjs(
+      birthDate.valueOf() + numBeforeBday * ratio * dayInMs
+    );
+    dates.push(birthday.format('dddd, D MMMM YYYY'));
     numBeforeBday++;
-    i++;
   }
+
   return dates;
 }

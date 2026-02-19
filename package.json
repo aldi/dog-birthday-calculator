@@ -3,39 +3,24 @@
   "author": "Aldi Duzha",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "homepage": "https://aldi.github.io/dog-birthday-calculator",
   "dependencies": {
-    "bulma": "^0.9.4",
-    "dayjs": "^1.11.7",
-    "framer-motion": "^3.2.2-rc.1",
-    "gh-pages": "^5.0.0",
-    "react": "^18.2.0",
-    "react-datepicker": "^4.10.0",
-    "react-dom": "^18.2.0",
-    "react-moment": "^1.1.3",
-    "react-scripts": "^5.0.1"
+    "dayjs": "^1.11.19",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "gh-pages": "^6.3.0",
+    "vite": "^6.1.0"
   },
   "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "deploy": "gh-pages -d build"
   }
 }
